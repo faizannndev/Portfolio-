@@ -412,7 +412,7 @@ section{
 
 .about-content h3{
     font-weight: 600;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
     margin-bottom: .2rem;
 }
 
@@ -442,6 +442,8 @@ section{
     animation: morph 6s linear infinite;
 }
 
+
+
 .info-about1{
     left: 10%;
     top: 34%;
@@ -462,6 +464,12 @@ section{
     font-size: 1rem;
     font-weight: 600;
 }
+
+.about .img-about img{
+    position: relative;
+    z-index: 1;
+}
+
 
 /*services section css-------------------------------------------*/
 .main-text{
@@ -1027,7 +1035,22 @@ footer a i{
    }
 
    .about{
-    flex-direction: column-reverse;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .about-content{
+      width: 100%;
+      padding: 0 15px;
+   }
+
+   .about .img-about{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
    }
 
    .skill-main{
